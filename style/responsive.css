@@ -1,0 +1,155 @@
+@media (max-width: 1500px) {
+  .main-position,
+  main {
+    margin: 0px 24px 0px 24px;
+  }
+  .width {
+    width: 100%;
+  }
+  .header-position,
+  .footer-position {
+    margin: 0px 24px 0px 24px;
+  }
+  .quickLinks-position {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+@media (max-width: 1300px) {
+  .start-section-first {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  .headline-two {
+    width: 100vw;
+  }
+  .start-section-second {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1100px) {
+  .quickLinks-position {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .info-position {
+    flex-wrap: wrap;
+  }
+  .start-section-third {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    width: 400px;
+    height: 600px;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    width: 300px;
+    height: 600px;
+    padding: 30px;
+  }
+}
+@media (max-width: 700px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .img-first-container {
+    width: 560px;
+  }
+  .contact-impressum,
+  .nav-header {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+    background-color: transparent;
+    position: absolute;
+    top: 94px;
+    right: 24px;
+    width: 40px;
+  }
+  .container-sent-mail {
+    width: 320px;
+  }
+  .menu-button:hover {
+    background-color: transparent;
+  }
+  .menu-button img {
+    position: absolute;
+    top: -75px;
+    height: 40px;
+    display: block;
+  }
+  .resp-menu-box {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: block;
+  }
+  .resp-menu-closed {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .img-first-container {
+    width: 420px;
+  }
+  .text-padding {
+    padding: 0 24px 24px 24px;
+  }
+}
+@media (max-width: 450px) {
+  .logo-footer {
+    display: none;
+  }
+  .footer-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-sent-mail {
+    width: 200px;
+  }
+  .container-sent-mail img {
+    width: 120px;
+  }
+  .img-first-container {
+    width: 300px;
+  }
+  .start-section-second a img {
+    width: 260px;
+    height: 160px;
+  }
+  .headline-third {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 250px;
+    height: 600px;
+    padding: 30px 16px 30px 16px;
+    margin: 50px 0px 50px 0px;
+  }
+  header img {
+    width: 240px;
+  }
+  .img-section-third {
+    width: 260px;
+  }
+  .section-quickLinks a img,
+  .start-section-first img {
+    width: 260px;
+  }
+}

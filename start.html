@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="icon" type="" href="img-kochwelt/logo_small.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <link rel="stylesheet" href="./style/start.css" />
+    <script src="js/robby-rezept.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="width header-position">
+        <a href="start.html"><img src="img-kochwelt/logo.png" alt="" /></a>
+        <nav class="nav-header">
+          <a href="start.html">Start</a>
+          <a href="robby-rezept.html">Rezept des Tages</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="resp-menu">
+        <button class="menu-button" onclick="toggleRespMenu()">
+          <img src="img-kochwelt/icons/hamburger-menu-svgrepo-com.svg" alt="" />
+        </button>
+        <div id="resp-menu" class="resp-menu-box resp-menu-closed">
+          <a href="start.html">Start</a>
+          <a href="robby-rezept.html">Rezept des Tages</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </section>
+      <section class="start-section-first width main-position">
+        <div>
+          <img class="img-first-container" src="img-kochwelt/zimtschnecken-mit-frischkaese-glasur.jpg" alt="" />
+        </div>
+        <div>
+          <h1>Zimtschnecken mit Frischkäse-Glasur</h1>
+          <p>
+            Verwöhnen Sie sich mit unwiderstehlich duftenden Zimtschnecken! Dieses Rezept sorgt für extra fluffigen Teig, gefüllt mit aromatischem Zimt und Zucker, der beim Backen leicht karamellisiert. Ein Hauch Zuckerguss vollendet die
+            Schnecken und macht sie perfekt für gemütliche Momente – ideal zum Kaffee oder einfach zwischendurch genießen!
+          </p>
+          <button onclick="window.location.href = 'robby-rezept.html';">Rezept öffnen</button>
+        </div>
+      </section>
+      <section class="headline-new">
+        <div class="headline-new-position"><h2>Lust auf was Neues?</h2></div>
+      </section>
+      <section class="section-quickLinks">
+        <div class="quickLinks-position width">
+          <a href="peter-rezept.html" class="quickLink">
+            <img src="img-kochwelt/img-peter/moussaka.jpg" />
+            <h3>Griechisches Moussaka</h3>
+          </a>
+          <a href="finn-rezept.html" class="quickLink">
+            <img src="img-kochwelt/img-finn/atf.jpg" />
+            <h3>Tomatiger Linsendal</h3>
+          </a>
+          <a href="arnesto-rezept.html" class="quickLink">
+            <img src="img-kochwelt/img-arnesto/Rendang.jpg" />
+            <h3>Rendang</h3>
+          </a>
+        </div>
+      </section>
+      <section class="headline-third">
+        <h2>Pfanne vs. Wok - Was ist besser?</h2>
+      </section>
+      <section class="start-section-third width">
+        <div>
+          <img class="img-section-third" src="img-kochwelt/wok.jpg" alt="" />
+        </div>
+        <div>
+          <p>
+            Eine Pfanne eignet sich hervorragend für gleichmäßiges Braten und Anbraten, besonders bei flachen Speisen. Ein Wok hingegen ermöglicht schnelles Garen bei hoher Hitze und ist ideal für asiatische Gerichte und größere Mengen
+            Gemüse, da er eine bessere Wärmeverteilung hat. Die Wahl hängt vom Gericht und der gewünschten Gartechnik ab.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="width footer-position">
+        <img class="logo-footer" src="img-kochwelt/logo-white.png" alt="" />
+        <nav class="contact-impressum">
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+        <div class="links-footer">
+          <nav class="nav-footer">
+            <a href="https://www.instagram.com/" target="_blank"><img src="img-kochwelt/icons/icons8-instagram-48.png" alt="" /></a>
+            <a href="https://x.com/" target="_blank"><img src="img-kochwelt/icons/icons8-twitter-48.png" alt="" /></a>
+            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="img-kochwelt/icons/icons8-facebook-48.png" alt="" /></a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- 
+Resp Menu Box mit dem Schatten vom Header versehen ( nur unten )
+deutsche Verlinkungen ( z.B. robby-rezept.js ) in Englisch und passenderer Name versehen
+Eine Zeile Platz lassen zwischen den Codes für bessere Lesbarkeit ( wer will 😅 )
+Placeholder für input-Textfelder -->

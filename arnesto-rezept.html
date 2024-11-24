@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rendang</title>
+    <link rel="icon" type="" href="img-kochwelt/logo_small.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <script src="js/robby-rezept.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="width header-position">
+        <a href="start.html"><img src="img-kochwelt/logo.png" alt="" /></a>
+        <nav class="nav-header">
+          <a href="start.html">Start</a>
+          <a href="robby-rezept.html">Rezept des Tages</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-position">
+      <section class="resp-menu">
+        <button class="menu-button" onclick="toggleRespMenu()">
+          <img src="img-kochwelt/icons/hamburger-menu-svgrepo-com.svg" alt="" />
+        </button>
+        <div id="resp-menu" class="resp-menu-box resp-menu-closed">
+          <a href="start.html">Start</a>
+          <a href="robby-rezept.html">Rezept des Tages</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </section>
+      <section class="first-section width">
+        <h1>Rendang</h1>
+        <img class="atf-image width" src="img-kochwelt/img-arnesto/Rendang.jpg" alt="" />
+        <div class="info-position">
+          <div class="info-style"><img src="img-kochwelt/icons/clock-regular.svg" alt="" />15 Min.</div>
+          <div class="info-style"><img src="img-kochwelt/icons/brain-solid.svg" alt="" />Medium</div>
+          <div class="info-style"><img src="img-kochwelt/icons/calendar-alt-regular.svg" alt="" />08.11.2024</div>
+        </div>
+        <div class="border"></div>
+      </section>
+      <section class="list-of-ingredients width">
+        <div class="ingredients-number-line">
+          <p>Anzahl der Portionen:</p>
+          <input id="amount" type="number" max="20" min="1" value="1" />
+          <button class="button2" onclick="amountCalculatorRendang(),calculateAmountRendang()">Portionen</button>
+          <p id="alert" class="displayNone">Wählen Sie bitte eine Anzahl zwischen 1 - 20 aus!</p>
+        </div>
+        <ul class="ul-style">
+          <li class="bg-color"><span id="gulaschArnesto">150</span> g Gulasch (Rind)</li>
+          <li><span id="zwiebelArnesto">0.25</span> große Zwiebel(n), fein gehackt</li>
+          <li class="bg-color"><span id="knoblauchArnesto">0.5</span> Knoblauchzehe(n), fein gehackt</li>
+          <li><span id="sambalOelekArnesto">0.25</span> TL Sambal Oelek</li>
+          <li class="bg-color"><span id="galgantArnesto">0.25</span> TL Galgant, gemahlen oder 4 Scheiben frisch</li>
+          <li><span id="ingwerArnesto">0.25</span> Stücke Ingwer, walnußgroß, fein gerieben</li>
+          <li class="bg-color"><span id="kurkumaArnesto">0.125</span> TL Kurkuma (Kunjit), gemahlen</li>
+          <li>Salz</li>
+          <li class="bg-color">Öl, geschmacksneutrales (Rapsöl oder Sonneblumenöl)</li>
+          <li><span id="kokosölArnesto">100</span> ml Kokosmilch, evtl. bei Bedarf auch mehr</li>
+          <li class="bg-color"><span id="zitronengrasArnesto">0.25</span> Stängel Zitronengras</li>
+          <li><span id="Lorbeerblätter">0.5</span> Lorbeerblätter (Daun Salam), indonesische</li>
+          <li class="bg-color">
+            <span id="kaffirLimettenblätterArnesto">1</span>
+            Kaffir-Limettenblätter (Daun djeruk purut), frisch oder getrocknet
+          </li>
+          <li>Sojasauce, süße (Ketjap manis)</li>
+          <li class="bg-color">Wasser</li>
+        </ul>
+      </section>
+      <section class="preparation width">
+        <h2>Zubereitung</h2>
+        <div class="info-position">
+          <div class="info-style"><img src="img-kochwelt/icons/clock-regular.svg" alt="" />Arbeitszeit ca. 15 Minuten</div>
+        </div>
+        <p>
+          Das Rindfleisch sollte etwas kleiner gewürfelt werden, als für unser Gulasch üblich (ca. 2-3 cm). Das Fleisch knapp mit Wasser bedeckt kochen. Knoblauch, Zwiebel, Ingwer, Galgant, Salz, Kurkuma und Sambal Oelek in einem
+          Steinmörser (Oelek) fein zerreiben und in etwas Öl anrösten.Mit der Kochbrühe des Fleischs ablöschen, Kokosmilch zugeben, die Blätter und das Zitronengras zugeben. Alles aufkochen und das Fleisch hineingeben.Nun muss das Fleisch
+          unter häufigem Rühren so lange bei mäßiger Hitze durchkochen, bis die Sauce dick cremig geworden ist. Mit Ketjap manis abschmecken. Keinen Deckel auflegen,das Gericht soll leise köcheln. Etwa 1 bis 1,5 Stunden dafür einplanen.
+          Heiß servieren. <br />
+          <strong>Tipp:</strong> Wer mag, kann auch noch weitere Gewürze wie Kreuzkümmel, Koriander oder Zimt zugeben. Diese werden dann zusammen mit der zerriebenen Paste im Öl angebraten. <br />
+          <strong>Hinweis:</strong> Rendang ist fast immer Bestandteil der indonesischen Reistafel, aber auch eigenständiges Gericht. Es kann sehr gut vorgekocht werden, hält sich einige Tage im Kühlschrank und eignet sich auch gut zum
+          Einfrieren.
+        </p>
+      </section>
+      <section class="width">
+        <h3>Rezept erstellt von</h3>
+        <div class="creator">
+          <img src="img-kochwelt/img-arnesto/Arnesto-profile.jpg" alt="" />
+          <p>Arnesto</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="width footer-position">
+        <img class="logo-footer" src="img-kochwelt/logo-white.png" alt="" />
+        <nav class="contact-impressum">
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+        <div class="links-footer">
+          <nav class="nav-footer">
+            <a href="https://www.instagram.com/" target="_blank"><img src="img-kochwelt/icons/icons8-instagram-48.png" alt="" /></a>
+            <a href="https://x.com/" target="_blank"><img src="img-kochwelt/icons/icons8-twitter-48.png" alt="" /></a>
+            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="img-kochwelt/icons/icons8-facebook-48.png" alt="" /></a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="js/input-überwachung.js"></script>
+  </body>
+</html>

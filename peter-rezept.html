@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Griechisches Moussaka</title>
+    <link rel="icon" type="" href="img-kochwelt/logo_small.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <script src="js/robby-rezept.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="width header-position">
+        <a href="start.html"><img src="img-kochwelt/logo.png" alt="" /></a>
+        <nav class="nav-header">
+          <a href="start.html">Start</a>
+          <a href="robby-rezept.html">Rezept des Tages</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-position">
+      <section class="resp-menu">
+        <button class="menu-button" onclick="toggleRespMenu()">
+          <img src="img-kochwelt/icons/hamburger-menu-svgrepo-com.svg" alt="" />
+        </button>
+        <div id="resp-menu" class="resp-menu-box resp-menu-closed">
+          <a href="start.html">Start</a>
+          <a href="robby-rezept.html">Rezept des Tages</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </section>
+      <section class="first-section width">
+        <h1>Griechisches Moussaka</h1>
+        <img class="atf-image width" src="img-kochwelt/img-peter/moussaka.jpg" alt="" />
+        <div class="info-position">
+          <div class="info-style"><img src="img-kochwelt/icons/clock-regular.svg" alt="" />120 Min.</div>
+          <div class="info-style"><img src="img-kochwelt/icons/brain-solid.svg" alt="" />Fortgeschritten</div>
+          <div class="info-style"><img src="img-kochwelt/icons/calendar-alt-regular.svg" alt="" />08.11.2024</div>
+        </div>
+        <div class="border"></div>
+      </section>
+      <section class="list-of-ingredients width">
+        <div class="ingredients-number-line">
+          <p>Anzahl der Portionen:</p>
+          <input id="amount" type="number" max="20" min="1" value="1" />
+          <button class="button2" onclick="amountCalculatorGriechischesMoussaka(),calculateAmountGriechischesMoussaka()">Portionen</button>
+          <p id="alert" class="displayNone">Wählen Sie bitte eine Anzahl zwischen 1 - 20 aus!</p>
+        </div>
+        <h3>Für den Teig:</h3>
+        <ul class="ul-style">
+          <li class="bg-color"><span id="auberginenPeter">0,5</span> Aubergine(n)</li>
+          <li><span id="hackfleischPeter">125</span> g Hackfleisch (Rind oder Lamm)</li>
+          <li class="bg-color"><span id="zwiebelPeter">0.25</span> Zwiebel(n)</li>
+          <li><span id="knoblauchPeter">0,5</span> Knoblauchzehe(n)</li>
+          <li class="bg-color"><span id="tomatenPeter">100</span> g Tomate(n)</li>
+          <li><span id="tomatenmarkPeter">0.5</span> EL Tomatenmark</li>
+          <li class="bg-color"><span id="zimtPeter">0.25</span> TL Zimt</li>
+          <li><span id="oreganoPeter">0.25</span> TL Oregano</li>
+          <li class="bg-color">Salz und Pfeffer nach Geschmack</li>
+          <li>Olivenöl zum Braten</li>
+        </ul>
+        <h3>Béchamelsauce:</h3>
+        <ul class="ul-style">
+          <li class="bg-color"><span id="butterPeter">12.5</span> g Butter</li>
+          <li><span id="mehlPeter">12.5</span> g Mehl</li>
+          <li class="bg-color"><span id="milchPeter">125</span> ml Milch</li>
+          <li><span id="eierPeter">0.25</span> Ei(er)</li>
+          <li class="bg-color"><span id="parmesanPeter">50</span> g Parmesan (gerieben)</li>
+          <li>Muskatnuss, Salz und Pfeffer nach Geschmack</li>
+        </ul>
+      </section>
+      <section class="preparation width">
+        <h2>Zubereitung</h2>
+        <div class="info-position">
+          <div class="info-style"><img src="img-kochwelt/icons/clock-regular.svg" alt="" />Vorbereitung: 30 Minuten</div>
+          <div class="info-style"><img src="img-kochwelt/icons/clock-regular.svg" alt="" />Gesamtzeit: 2 Stunden</div>
+        </div>
+        <ol>
+          <li>Auberginen vorbereiten: Die Auberginen in etwa 1 cm dicke Scheiben schneiden, salzen und 30 Minuten ruhen lassen, um die Bitterstoffe zu entfernen. Danach abspülen und trocken tupfen.</li>
+          <br />
+          <li>Auberginen braten: In einer Pfanne Olivenöl erhitzen und die Auberginenscheiben von beiden Seiten goldbraun braten. Auf Küchenpapier abtropfen lassen.</li>
+          <br />
+          <li>
+            Hackfleischsauce zubereiten: In derselben Pfanne Zwiebeln und Knoblauch anbraten, bis sie weich sind. Das Hackfleisch hinzufügen und braten, bis es braun ist. Tomaten, Tomatenmark, Zimt, Oregano, Salz und Pfeffer hinzufügen und
+            etwa 20 Minuten köcheln lassen.
+          </li>
+          <br />
+          <li>
+            Béchamelsauce zubereiten: In einem Topf die Butter schmelzen, das Mehl hinzufügen und unter ständigem Rühren eine Mehlschwitze herstellen. Nach und nach die Milch einrühren, bis die Sauce dick wird. Vom Herd nehmen und das Ei
+            sowie den Parmesan einrühren. Mit Muskatnuss, Salz und Pfeffer abschmecken.
+          </li>
+          <br />
+          <li>
+            Moussaka schichten: Eine Auflaufform einfetten und eine Schicht Auberginen auf den Boden legen. Eine Schicht Hackfleischsauce darauf verteilen. Diesen Vorgang wiederholen, bis alle Zutaten aufgebraucht sind. Mit der
+            Béchamelsauce abschließen.
+            <br />
+          </li>
+          <br />
+          <li>Backen: Den Ofen auf 180°C vorheizen und das Moussaka etwa 45 Minuten backen, bis die Oberfläche goldbraun ist.</li>
+          <br />
+        </ol>
+      </section>
+      <section class="width">
+        <h3>Rezept erstellt von</h3>
+        <div class="creator">
+          <img src="img-kochwelt/img-peter/peter_profile_pic.jpg" alt="" />
+          <p>Peter</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="width footer-position">
+        <img class="logo-footer" src="img-kochwelt/logo-white.png" alt="" />
+        <nav class="contact-impressum">
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+        <div class="links-footer">
+          <nav class="nav-footer">
+            <a href="https://www.instagram.com/" target="_blank"><img src="img-kochwelt/icons/icons8-instagram-48.png" alt="" /></a>
+            <a href="https://x.com/" target="_blank"><img src="img-kochwelt/icons/icons8-twitter-48.png" alt="" /></a>
+            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="img-kochwelt/icons/icons8-facebook-48.png" alt="" /></a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="js/input-überwachung.js"></script>
+  </body>
+</html>

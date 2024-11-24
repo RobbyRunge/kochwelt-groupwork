@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomatiger Linsendal</title>
+    <link rel="icon" type="" href="img-kochwelt/logo_small.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
+    <script src="js/robby-rezept.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="width header-position">
+        <a href="start.html"><img src="img-kochwelt/logo.png" alt="" /></a>
+        <nav class="nav-header">
+          <a href="start.html">Start</a>
+          <a href="robby-rezept.html">Rezept des Tages</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-position">
+      <section class="resp-menu">
+        <button class="menu-button" onclick="toggleRespMenu()">
+          <img src="img-kochwelt/icons/hamburger-menu-svgrepo-com.svg" alt="" />
+        </button>
+        <div id="resp-menu" class="resp-menu-box resp-menu-closed">
+          <a href="start.html">Start</a>
+          <a href="robby-rezept.html">Rezept des Tages</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </section>
+      <section class="first-section width">
+        <h1>Tomatiger Linsendal</h1>
+        <img class="atf-image width" src="img-kochwelt/img-finn/atf.jpg" alt="" />
+        <div class="info-position">
+          <div class="info-style"><img src="img-kochwelt/icons/clock-regular.svg" alt="" />35 Min.</div>
+          <div class="info-style"><img src="img-kochwelt/icons/brain-solid.svg" alt="" />Medium</div>
+          <div class="info-style"><img src="img-kochwelt/icons/calendar-alt-regular.svg" alt="" />08.11.2024</div>
+        </div>
+        <div class="border"></div>
+      </section>
+      <section class="list-of-ingredients width">
+        <div class="ingredients-number-line">
+          <p>Anzahl der Portionen:</p>
+          <input id="amount" type="number" max="20" min="1" value="1" />
+          <button class="button2" onclick="amountCalculatorTomatigerLinsendal(),calculateAmountTomatigerLinsendal()">Portionen</button>
+          <p id="alert" class="displayNone">Wählen Sie bitte eine Anzahl zwischen 1 - 20 aus!</p>
+        </div>
+        <h3>Für den Teig:</h3>
+        <ul class="ul-style">
+          <li class="bg-color"><span id="roteLinsenFinn">150</span> g Rote Linsen</li>
+          <li><span id="zwiebelFinn">1</span> Zwiebel(n)</li>
+          <li class="bg-color"><span id="knoblauchFinn">1</span> Knoblauchzehe(n)</li>
+          <li><span id="ingwerFinn">2</span> Ingwer</li>
+          <li class="bg-color"><span id="kokosmilchFinn">200</span> ml Kokusmilch</li>
+          <li><span id="tomatenmarkFinn">20</span> g Tomatenmark</li>
+          <li class="bg-color"><span id="kokosölFinn">20</span> ml Kokosöl</li>
+          <li><span id="korianderFinn">1</span> Koriander</li>
+          <li class="bg-color"><span id="kreuzkümmelFinn">0.5</span> Kreuzkümmel</li>
+          <li><span id="kurkumaFinn">0.5</span> Kurkuma</li>
+          <li class="bg-color"><span id="gemüsebrüheFinn">250</span> Gemüsebrühe</li>
+          <li>Salz und Pfeffer</li>
+        </ul>
+      </section>
+      <section class="preparation width">
+        <h2>Zubereitung</h2>
+        <div class="info-position">
+          <div class="info-style"><img src="img-kochwelt/icons/clock-regular.svg" alt="" />Arbeitszeit ca. 35 Minuten</div>
+          <div class="info-style"><img src="img-kochwelt/icons/clock-regular.svg" alt="" />Gesamtzeit ca. 35 Minuten</div>
+        </div>
+        <p>
+          Linsen waschen. Zwiebel, Knoblauch und Ingwer schälen und würfeln. Zwiebel, Knoblauch und Ingwer 3 Min. in Kokosöl dünsten. Koriander, Kreuzkümmel und Kurkuma unterrühren und 30 Sek. anrösten. Gemüsebrühe, Kokosmilch und Linsen
+          hinzufügen und alles zugedeckt 25 Min. köcheln lassen. Den Dal mit Salz, Pfeffer und Tomatenmark abschmecken.<br />
+          Tipp: Köstlich mit Mango-Chutney und Reis.
+        </p>
+      </section>
+      <section class="width">
+        <h3>Rezept erstellt von</h3>
+        <div class="creator">
+          <img src="img-kochwelt/img-finn/IMG_0224.jpeg" alt="" />
+          <p>Finn</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="width footer-position">
+        <img class="logo-footer" src="img-kochwelt/logo-white.png" alt="" />
+        <nav class="contact-impressum">
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+        <div class="links-footer">
+          <nav class="nav-footer">
+            <a href="https://www.instagram.com/" target="_blank"><img src="img-kochwelt/icons/icons8-instagram-48.png" alt="" /></a>
+            <a href="https://x.com/" target="_blank"><img src="img-kochwelt/icons/icons8-twitter-48.png" alt="" /></a>
+            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="img-kochwelt/icons/icons8-facebook-48.png" alt="" /></a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="js/input-überwachung.js"></script>
+  </body>
+</html>

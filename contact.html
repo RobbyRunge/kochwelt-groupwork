@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="icon" href="img-kochwelt/logo_small.png" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/contact.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="width header-position">
+        <a href="start.html"><img src="img-kochwelt/logo.png" alt="" /></a>
+        <nav class="nav-header">
+          <a href="start.html">Start</a>
+          <a href="robby-rezept.html">Rezept des Tages</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="resp-menu">
+        <button class="menu-button" onclick="toggleRespMenu()">
+          <img src="img-kochwelt/icons/hamburger-menu-svgrepo-com.svg" alt="" />
+        </button>
+        <div id="resp-menu" class="resp-menu-box resp-menu-closed">
+          <a href="start.html">Start</a>
+          <a href="robby-rezept.html">Rezept des Tages</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </section>
+      <section class="container">
+        <form onsubmit="sendMail(event)" class="submit-form">
+          <label>
+            Ihr Name:
+            <input type="fname" name="name" required />
+          </label>
+          <label>
+            Ihre E-Mail:
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Ihre Nachricht:
+            <textarea name="message" class="text-area" required></textarea>
+          </label>
+          <div class="button-position">
+            <button type="submit">Abschicken</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="width footer-position">
+        <img class="logo-footer" src="img-kochwelt/logo-white.png" alt="" />
+        <nav class="contact-impressum">
+          <a href="contact.html">Kontakt</a>
+          <a href="impressum.html">Impressum</a>
+        </nav>
+        <div class="links-footer">
+          <nav class="nav-footer">
+            <a href="https://www.instagram.com/" target="_blank"><img src="img-kochwelt/icons/icons8-instagram-48.png" alt="" /></a>
+            <a href="https://x.com/" target="_blank"><img src="img-kochwelt/icons/icons8-twitter-48.png" alt="" /></a>
+            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="img-kochwelt/icons/icons8-facebook-48.png" alt="" /></a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+    <script src="js/contact.js"></script>
+    <script src="js/robby-rezept.js"></script>
+  </body>
+</html>
