@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Raleway";
-  src: url("fonts/Raleway-VariableFont_wght.ttf") format("truetype"),
-    url("fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("fonts/Raleway-VariableFont_wght.ttf") format("truetype"), url("fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -59,7 +58,7 @@ main {
   flex-direction: column;
 }
 #alert {
-  margin-left: 8px;
+  text-align: start;
   font-weight: bold;
   color: red;
 }

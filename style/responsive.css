@@ -20,6 +20,7 @@
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
   .headline-two {
     width: 100vw;
@@ -41,6 +42,7 @@
   .start-section-third {
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
   }
 }
 @media (max-width: 750px) {
@@ -65,7 +67,7 @@
     justify-content: flex-start;
   }
   .img-first-container {
-    width: 560px;
+    width: 100%;
   }
   .contact-impressum,
   .nav-header {
@@ -102,9 +104,6 @@
   }
 }
 @media (max-width: 600px) {
-  .img-first-container {
-    width: 420px;
-  }
   .text-padding {
     padding: 0 24px 24px 24px;
   }
@@ -123,9 +122,6 @@
   }
   .container-sent-mail img {
     width: 120px;
-  }
-  .img-first-container {
-    width: 300px;
   }
   .start-section-second a img {
     width: 260px;
@@ -148,8 +144,7 @@
   .img-section-third {
     width: 260px;
   }
-  .section-quickLinks a img,
-  .start-section-first img {
+  .section-quickLinks a img {
     width: 260px;
   }
 }
